@@ -19,11 +19,30 @@
 
 
 
-let arr=[2,4,6,10];
-let n=5
-for(let i=0;i<n-2;i++){               // n-2 used because the elements in arr will go out of bound
-    if(arr[i+1]-arr[i] != 1){
-        missnum=arr[i]+1;
-    }
+// let arr=[2,4,6,10];
+// let n=5
+// for(let i=0;i<n-2;i++){               // n-2 used because the elements in arr will go out of bound
+    // if(arr[i+1]-arr[i] != 1){
+        // missnum=arr[i]+1;
+    // }
+// }
+// console.log(missnum);
+
+
+
+
+
+
+let arr = [1, 2, 4, 6, 3, 7, 8];
+let N = 8;
+
+let formula = (N * (N + 1)) / 2;
+let sumOfArr = 0;
+for (let i = 0; i < arr.length; i++) {
+    sumOfArr += arr[i];
 }
-console.log(missnum);
+
+let missingNumber = formula - sumOfArr;
+
+console.log(missingNumber);
+
